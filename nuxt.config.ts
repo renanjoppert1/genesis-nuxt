@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   modules: [
     'nuxt-quasar-ui',
-    '@nuxtjs/tailwindcss'
+    // '@nuxtjs/tailwindcss'
   ],
 
   imports: {
@@ -29,6 +29,8 @@ export default defineNuxtConfig({
     }
   },
 
+  css: ['~/assets/css/main.css'],
+
   quasar: {
     config: {
       dark: true,
@@ -45,5 +47,12 @@ export default defineNuxtConfig({
         warning: '#F2C037'
       }
     }
-  }
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })
