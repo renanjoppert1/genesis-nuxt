@@ -18,7 +18,7 @@
       </q-btn>
       <q-btn color="primary" text-color="black" class="q-ma-sm row">
         <AppIcon class="q-mr-sm" name="jam:plus" />
-        Cadastre-se
+        <span class="font-bold">Cadastre-se</span>
       </q-btn>
     </div>
   </header>
