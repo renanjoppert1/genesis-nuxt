@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     autoImport: true
   },
 
+  components: [
+    '~/components',
+  ],
+
   app: {
     head: {
       title: 'Escola Genesis',
