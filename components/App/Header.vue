@@ -1,7 +1,7 @@
 <template>
   <header class="row items-center q-px-lg q-py-lg">
     <div class="logo">
-      <img src="~/assets/img/logo-branca.png" height="75" />
+      <img src="~/assets/img/logo-branca.png" class="h-[75px]" />
     </div>
     <div class="navbar row items-center justify-center col-grow">
       <q-btn flat color="white" label="Página Inicial" />
@@ -13,7 +13,8 @@
     </div>
     <div class="cta-group row">
       <q-btn text-color="primary" class="q-ma-sm" outline>
-        <AppIcon class="q-mr-sm" name="tabler:user" />Entrar
+        <AppIcon class="q-mr-sm" name="tabler:user" />
+        <span class="font-bold">Entrar</span>
       </q-btn>
       <q-btn color="primary" text-color="black" class="q-ma-sm row">
         <AppIcon class="q-mr-sm" name="jam:plus" />
