@@ -30,7 +30,7 @@
   </section>
 
   <section class="categories">
-    <AppContainer class="tw-flex-col">
+    <AppContainer class="tw-flex-col tw-py-[10vh]">
       <p
         class="tw-w-full tw-flex tw-justify-center tw-text-[34px] tw-font-bold tw-mb-10 tw-text-genesis"
       >
