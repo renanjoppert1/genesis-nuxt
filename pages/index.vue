@@ -113,9 +113,9 @@
     </AppContainer>
   </section>
 
-  <section class="popular-courses">
+  <section class="popular-courses tw-py-[10vh]">
     <AppContainer class="tw-flex-col tw-gap-10 lg:tw-flex-row tw-items-center">
-      <div>
+      <div class="tw-w-full lg:tw-w-1/2">
         <p
           class="tw-w-full tw-flex tw-justify-center lg:tw-justify-start tw-text-[34px] tw-font-bold tw-mb-10 tw-text-genesis"
         >
@@ -126,8 +126,72 @@
         >
           Aqui estão os cursos mais feitos pelos alunos da Escola Genesis
         </p>
+        <q-btn
+          color="primary"
+          text-color="black"
+          class="tw-my-4 row tw-mb-[10vh] lg:tw-mb-auto"
+          to="/cursos/categoria/destaque"
+          size="1.2em"
+        >
+          Confira Os Cursos em Destaque
+        </q-btn>
       </div>
-      <div>
+      <div class="tw-grow">
+        <q-carousel
+          v-model="popularCoursesCarousel"
+          animated
+          control-type="flat"
+          control-color="primary"
+          navigation
+          navigation-position="bottom"
+          arrows
+          infinite
+          height="auto"
+          class="tw-bg-transparent"
+        >
+          <q-carousel-slide
+            v-for="slide in slides"
+            :key="`slide-popuplar-courses-${slide}`"
+            :name="slide"
+            class="column no-wrap flex-center"
+          >
+            <HomeCourseCard
+              title="Teste"
+              author="Renan Joppert"
+              totalHours="0"
+            />
+          </q-carousel-slide>
+        </q-carousel>
+      </div>
+    </AppContainer>
+  </section>
+
+  <section class="fresh-courses tw-py-[10vh]">
+    <AppContainer class="tw-flex-col tw-gap-10 lg:tw-flex-row tw-items-center">
+      <div class="tw-w-full lg:tw-w-1/2">
+        <p
+          class="tw-w-full tw-flex tw-justify-center lg:tw-justify-start tw-text-[34px] tw-font-bold tw-mb-10 tw-text-genesis"
+        >
+          Cursos Para Terminar Hoje
+        </p>
+        <p
+          class="tw-text-lg tw-justify-center !tw-text-zinc-400 tw-mt-4 lg:tw-mb-10"
+        >
+          Separamos para você alguns cursos rápidos para você começar e terminar
+          hoje!
+        </p>
+
+        <q-btn
+          color="primary"
+          text-color="black"
+          class="tw-my-4 row tw-mb-[10vh] lg:tw-mb-auto"
+          to="/cursos/categoria/destaque"
+          size="1.2em"
+        >
+          Confira Os Cursos Rápidos
+        </q-btn>
+      </div>
+      <div class="tw-grow">
         <q-carousel
           v-model="popularCoursesCarousel"
           animated
