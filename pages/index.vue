@@ -112,6 +112,50 @@
       </div>
     </AppContainer>
   </section>
+
+  <section class="popular-courses">
+    <AppContainer class="tw-flex-col tw-gap-10 lg:tw-flex-row tw-items-center">
+      <div>
+        <p
+          class="tw-w-full tw-flex tw-justify-center lg:tw-justify-start tw-text-[34px] tw-font-bold tw-mb-10 tw-text-genesis"
+        >
+          Cursos em Alta
+        </p>
+        <p
+          class="tw-text-lg tw-justify-center !tw-text-zinc-400 tw-mt-4 lg:tw-mb-10"
+        >
+          Aqui estão os cursos mais feitos pelos alunos da Escola Genesis
+        </p>
+      </div>
+      <div>
+        <q-carousel
+          v-model="popularCoursesCarousel"
+          animated
+          control-type="flat"
+          control-color="primary"
+          navigation
+          navigation-position="bottom"
+          arrows
+          infinite
+          height="auto"
+          class="tw-bg-transparent"
+        >
+          <q-carousel-slide
+            v-for="slide in slides"
+            :key="`slide-popuplar-courses-${slide}`"
+            :name="slide"
+            class="column no-wrap flex-center"
+          >
+            <HomeCourseCard
+              title="Teste"
+              author="Renan Joppert"
+              totalHours="0"
+            />
+          </q-carousel-slide>
+        </q-carousel>
+      </div>
+    </AppContainer>
+  </section>
 </template>
 
 <script lang="ts" setup>
@@ -123,6 +167,9 @@ const categories = ref({
   classTextSize: "tw-text-base",
   outline: true,
 });
+
+const slides = ref(6);
+const popularCoursesCarousel = ref(1);
 </script>
 
 
