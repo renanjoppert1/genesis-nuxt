@@ -220,9 +220,53 @@
       </div>
     </AppContainer>
   </section>
+
+  <section class="newsletter tw-py-[10vh]">
+    <AppContainer class="tw-flex-col tw-gap-10 lg:tw-flex-row tw-items-center">
+      <div class="tw-w-full lg:tw-w-1/2">
+        <p
+          class="tw-w-full tw-flex tw-justify-center lg:tw-justify-start tw-text-[34px] tw-font-bold tw-mb-10 tw-text-genesis"
+        >
+          Fique Por Dentro das Novidades
+        </p>
+        <p
+          class="tw-text-lg tw-justify-center !tw-text-zinc-400 tw-mt-4 lg:tw-mb-10"
+        >
+          Não perca nenhuma novidade aqui da Escola Genesis! Cadastre-se no
+          campo de e-mail ao lado!
+        </p>
+      </div>
+      <div class="tw-grow">
+        <q-form
+          @submit.prevent="onSubmit"
+          class="q-gutter-md tw-grid tw-grid-cols-3"
+        >
+          <q-input
+            class="tw-col-span-2"
+            filled
+            v-model="email"
+            label="Seu Melhor E-mail"
+          />
+          <q-btn
+            color="primary"
+            text-color="black"
+            class="tw-my-4 tw-mb-[10vh] lg:tw-mb-auto"
+            type="submit"
+            size="1.2em"
+          >
+            Cadastrar
+          </q-btn>
+        </q-form>
+      </div>
+    </AppContainer>
+  </section>
 </template>
 
 <script lang="ts" setup>
+import { useQuasar } from "quasar";
+
+const $q = useQuasar();
+
 const categories = ref({
   iconSize: "24px",
   color: "primary",
@@ -234,6 +278,28 @@ const categories = ref({
 
 const slides = ref(6);
 const popularCoursesCarousel = ref(1);
+
+const email = ref("");
+
+function onSubmit() {
+  console.log("Olá mundo");
+  $q.notify({
+    type: "positive",
+    message: "E-mail cadastrado com sucesso",
+    position: "top-right",
+    progress: true,
+    actions: [
+      {
+        icon: "close",
+        color: "white",
+        round: true,
+        handler: () => {
+          /* ... */
+        },
+      },
+    ],
+  });
+}
 </script>
 
 

@@ -33,6 +33,11 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   quasar: {
+
+    plugins: [
+      'Notify'
+    ],
+
     config: {
       dark: true,
       brand: {
