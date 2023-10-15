@@ -54,7 +54,7 @@
         <q-btn flat icon="menu" label="MENU" @click="toggeMenu()" />
       </div>
 
-      <nav class="tw-hidden lg:tw-flex">
+      <nav class="tw-hidden lg:tw-flex tw-font-bold">
         <q-btn
           flat
           :color="checkLinkIsActiveState(item.link) ? 'primary' : 'white'"
@@ -62,6 +62,7 @@
           :key="`menu-desktop-${index}`"
           :label="item.label"
           :to="item.link"
+          class="tw-font-semibold"
         />
       </nav>
     </div>
