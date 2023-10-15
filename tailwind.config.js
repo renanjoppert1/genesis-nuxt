@@ -10,6 +10,9 @@ export default {
     "./error.vue"
   ],
   theme: {
+    colors: {
+      genesis: '#f1c400'
+    },
     extend: {},
   },
   plugins: [],
