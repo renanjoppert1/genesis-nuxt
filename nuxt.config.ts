@@ -4,6 +4,7 @@ export default defineNuxtConfig({
 
   modules: [
     'nuxt-quasar-ui',
+    '@nuxtjs/google-fonts'
     // '@nuxtjs/tailwindcss'
   ],
 
@@ -55,4 +56,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  googleFonts: {
+    families: {
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    }
+  }
 })
