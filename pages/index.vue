@@ -22,15 +22,107 @@
         </q-btn>
       </div>
       <div
-        class="tw-hidden md:tw-flex tw-w-full lg:tw-w-2/5 lg:tw-pl-10 tw-box-border"
+        class="tw-hidden lg:tw-flex tw-w-full lg:tw-w-2/5 lg:tw-pl-10 tw-box-border"
       >
         <img src="~/assets/img/banner.png" />
+      </div>
+    </AppContainer>
+  </section>
+
+  <section class="categories">
+    <AppContainer class="tw-flex-col">
+      <p
+        class="tw-w-full tw-flex tw-justify-center tw-text-[34px] tw-font-bold tw-mb-10 tw-text-genesis"
+      >
+        O Que Você Quer Aprender Hoje?
+      </p>
+
+      <div
+        class="tw-w-full tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8"
+      >
+        <q-btn
+          :outline="categories.outline"
+          :color="categories.color"
+          :padding="categories.padding"
+          :size="categories.iconSize"
+          :text-color="categories.textColor"
+        >
+          <AppIcon name="fa6-solid:book-bible" class="tw-mr-4" />
+          <span :class="`${categories.classTextSize}`">Estudo Bíblico</span>
+        </q-btn>
+
+        <q-btn
+          :outline="categories.outline"
+          :color="categories.color"
+          :padding="categories.padding"
+          :size="categories.iconSize"
+          :text-color="categories.textColor"
+        >
+          <AppIcon name="mdi:cross" class="tw-mr-4" />
+          <span :class="`${categories.classTextSize}`"
+            >Vida Cristã na Prática</span
+          >
+        </q-btn>
+
+        <q-btn
+          :outline="categories.outline"
+          :color="categories.color"
+          :padding="categories.padding"
+          :size="categories.iconSize"
+          :text-color="categories.textColor"
+        >
+          <AppIcon name="fa6-solid:people-line" class="tw-mr-4" />
+          <span :class="`${categories.classTextSize}`"
+            >Ministério e Liderança</span
+          >
+        </q-btn>
+
+        <q-btn
+          :outline="categories.outline"
+          :color="categories.color"
+          :padding="categories.padding"
+          :size="categories.iconSize"
+          :text-color="categories.textColor"
+        >
+          <AppIcon name="mingcute:user-1-line" class="tw-mr-4" />
+          <span :class="`${categories.classTextSize}`">Vida Devocional </span>
+        </q-btn>
+
+        <q-btn
+          :outline="categories.outline"
+          :color="categories.color"
+          :padding="categories.padding"
+          :size="categories.iconSize"
+          :text-color="categories.textColor"
+        >
+          <AppIcon name="solar:book-broken" class="tw-mr-4" />
+          <span :class="`${categories.classTextSize}`">História Cristã </span>
+        </q-btn>
+
+        <q-btn
+          :outline="categories.outline"
+          :color="categories.color"
+          :padding="categories.padding"
+          :size="categories.iconSize"
+          :text-color="categories.textColor"
+        >
+          <AppIcon name="game-icons:guitar-bass-head" class="tw-mr-4" />
+          <span :class="`${categories.classTextSize}`">Louvor e Adoração </span>
+        </q-btn>
       </div>
     </AppContainer>
   </section>
 </template>
 
 <script lang="ts" setup>
+const categories = ref({
+  iconSize: "24px",
+  color: "primary",
+  padding: "1.5em",
+  textColor: "primary",
+  classTextSize: "tw-text-base",
+  outline: true,
+});
 </script>
 
 
