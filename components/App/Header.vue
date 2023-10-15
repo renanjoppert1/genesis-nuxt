@@ -1,15 +1,17 @@
 <template>
   <header
-    class="tw-flex tw-flex-row tw-gap-4 md:tw-flex-row tw-items-center tw-px-5 tw-py-5"
+    class="tw-w-full tw-flex tw-gap-4 tw-items-center tw-px-5 tw-py-5 tw-flex-wrap lg:tw-flex-nowrap"
   >
-    <div class="logo tw-flex tw-justify-center">
+    <div
+      class="logo tw-flex tw-justify-start tw-w-full lg:tw-w-auto sm:tw-justify-center"
+    >
       <img
         src="~/assets/img/logo-branca.png"
         class="tw-h-[75px] tw-object-contain"
       />
     </div>
     <div
-      class="navbar tw-flex tw-w-1/2 tw-items-center tw-justify-center tw-grow"
+      class="navbar tw-flex absolute tw-top-10 tw-right-0 lg:tw-right-auto lg:tw-top-auto lg:tw-relative lg:tw-w-auto tw-items-center tw-justify-center lg:tw-grow"
     >
       <div
         class="menu-mobile-wrapper lg:tw-hidden"
@@ -47,6 +49,8 @@
                   <q-item-section> {{ item.label }} </q-item-section>
                 </q-item>
               </q-list>
+
+              <AppTopCtaButtons stacked />
             </nav>
           </q-scroll-area>
         </q-drawer>
@@ -66,15 +70,9 @@
         />
       </nav>
     </div>
-    <div class="cta-group flex">
-      <q-btn text-color="primary" class="tw-m-2" outline>
-        <AppIcon class="tw-mr-3" name="tabler:user" />
-        <span class="tw-font-bold">Entrar</span>
-      </q-btn>
-      <q-btn color="primary" text-color="black" class="tw-m-2 row">
-        <AppIcon class="tw-mr-3" name="jam:plus" />
-        <span class="tw-font-bold">Cadastre-se</span>
-      </q-btn>
+
+    <div class="cta-group tw-hidden lg:tw-flex lg:tw-w-auto">
+      <AppTopCtaButtons />
     </div>
   </header>
 </template>
