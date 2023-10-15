@@ -1,7 +1,10 @@
 <template>
   <div class="layout__default">
     <div class="background-overlay tw-min-h-screen tw-bg-black/40">
-      <slot />
+      <AppHeader />
+      <main>
+        <slot />
+      </main>
     </div>
   </div>
 </template>
