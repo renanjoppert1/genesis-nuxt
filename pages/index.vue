@@ -1,5 +1,5 @@
 <template>
-  <section class="banner">
+  <section class="banner lg:tw-min-h-[80vh] tw-flex">
     <AppContainer class="tw-flex-col tw-gap-10 lg:tw-flex-row tw-items-center">
       <div class="tw-w-full lg:tw-w-3/5 tw-box-border">
         <p

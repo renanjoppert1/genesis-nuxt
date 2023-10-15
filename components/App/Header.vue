@@ -32,7 +32,7 @@
           <q-scroll-area class="fit">
             <div class="logo-wrapper tw-w-full tw-p-4">
               <img
-                src="~/assets/img/logo-branca.png"
+                src="~/assets/img/logo-amarela.png"
                 class="tw-h-[60px] tw-object-contain"
               />
             </div>
