@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   prefix: 'tw-',
   content: [
@@ -10,10 +11,11 @@ export default {
     "./error.vue"
   ],
   theme: {
-    colors: {
-      genesis: '#f1c400'
+    extend: {
+      colors: {
+        genesis: '#f1c400',
+      }
     },
-    extend: {},
   },
   plugins: [],
 }
