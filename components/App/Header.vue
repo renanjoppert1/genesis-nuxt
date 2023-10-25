@@ -5,10 +5,12 @@
     <div
       class="logo tw-flex tw-justify-start tw-w-full lg:tw-w-auto sm:tw-justify-center"
     >
-      <img
-        src="~/assets/img/logo-branca.png"
-        class="tw-h-[75px] tw-object-contain"
-      />
+      <NuxtLink to="/">
+        <img
+          src="~/assets/img/logo-branca.png"
+          class="tw-h-[75px] tw-object-contain"
+        />
+      </NuxtLink>
     </div>
     <div
       class="navbar tw-flex absolute tw-top-10 tw-right-0 lg:tw-right-auto lg:tw-top-auto lg:tw-relative lg:tw-w-auto tw-items-center tw-justify-center lg:tw-grow"
@@ -31,10 +33,12 @@
           />
           <q-scroll-area class="fit">
             <div class="logo-wrapper tw-w-full tw-p-4">
-              <img
-                src="~/assets/img/logo-amarela.png"
-                class="tw-h-[60px] tw-object-contain"
-              />
+              <NuxtLink to="/">
+                <img
+                  src="~/assets/img/logo-amarela.png"
+                  class="tw-h-[60px] tw-object-contain"
+                />
+              </NuxtLink>
             </div>
 
             <nav class="tw-p-4 tw-flex tw-flex-col">
