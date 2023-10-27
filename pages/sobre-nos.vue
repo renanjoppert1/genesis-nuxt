@@ -46,7 +46,7 @@
             <a
               href="#"
               class="tw-inline-block tw-rounded-lg tw-bg-gray-200 tw-px-8 tw-py-3 tw-text-center tw-text-sm tw-font-semibold tw-text-gray-500 tw-outline-none tw-ring-indigo-300 tw-transition tw-duration-100 hover:tw-bg-gray-300 focus-visible:tw-ring active:tw-text-gray-700 md:tw-text-base"
-              >Nossa Equipe</a
+              >Etapas do Aprendizado</a
             >
           </div>
         </div>
