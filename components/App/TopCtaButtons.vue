@@ -10,7 +10,12 @@
       <AppIcon class="tw-mr-3" name="tabler:user" />
       <span class="tw-font-bold">Entrar</span>
     </q-btn>
-    <q-btn color="primary" text-color="black" class="tw-m-2 row" to="/registro">
+    <q-btn
+      color="primary"
+      text-color="black"
+      class="tw-m-2 row"
+      to="/periodo-de-avaliacao"
+    >
       <AppIcon class="tw-mr-3" name="jam:plus" />
       <span class="tw-font-bold">Cadastre-se</span>
     </q-btn>
