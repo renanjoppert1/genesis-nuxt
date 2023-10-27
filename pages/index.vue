@@ -136,32 +136,17 @@
           Confira Os Cursos em Destaque
         </q-btn>
       </div>
-      <div class="tw-grow">
-        <q-carousel
-          v-model="popularCoursesCarousel"
-          animated
-          control-type="flat"
-          control-color="primary"
-          navigation
-          navigation-position="bottom"
-          arrows
-          infinite
-          height="auto"
-          class="tw-bg-transparent"
-        >
-          <q-carousel-slide
-            v-for="slide in slides"
-            :key="`slide-popuplar-courses-${slide}`"
-            :name="slide"
-            class="column no-wrap flex-center"
-          >
-            <HomeCourseCard
-              title="Teste"
-              author="Renan Joppert"
-              totalHours="0"
-            />
-          </q-carousel-slide>
-        </q-carousel>
+      <div class="tw-grow tw-w-full md:tw-w-1/2">
+        <carousel :autoplay="3500">
+          <slide v-for="slide in 10" :key="slide">
+            <div class="carousel__item"><MaterialCard /></div>
+          </slide>
+
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
       </div>
     </AppContainer>
   </section>
@@ -191,32 +176,17 @@
           Confira Os Cursos Rápidos
         </q-btn>
       </div>
-      <div class="tw-grow">
-        <q-carousel
-          v-model="popularCoursesCarousel"
-          animated
-          control-type="flat"
-          control-color="primary"
-          navigation
-          navigation-position="bottom"
-          arrows
-          infinite
-          height="auto"
-          class="tw-bg-transparent"
-        >
-          <q-carousel-slide
-            v-for="slide in slides"
-            :key="`slide-popuplar-courses-${slide}`"
-            :name="slide"
-            class="column no-wrap flex-center"
-          >
-            <HomeCourseCard
-              title="Teste"
-              author="Renan Joppert"
-              totalHours="0"
-            />
-          </q-carousel-slide>
-        </q-carousel>
+      <div class="tw-w-full md:tw-w-1/2">
+        <carousel :autoplay="3500">
+          <slide v-for="slide in 10" :key="slide">
+            <div class="carousel__item"><MaterialCard /></div>
+          </slide>
+
+          <template #addons>
+            <navigation />
+            <pagination />
+          </template>
+        </carousel>
       </div>
     </AppContainer>
   </section>
@@ -265,6 +235,9 @@
 <script lang="ts" setup>
 import { useQuasar } from "quasar";
 
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+
 const $q = useQuasar();
 
 const categories = ref({
@@ -304,5 +277,23 @@ function onSubmit() {
 
 
 
-<style>
+<style lang="scss">
+.carousel {
+  .carousel__prev {
+    color: rgb(241, 196, 0) !important;
+  }
+
+  .carousel__next {
+    color: rgb(241, 196, 0) !important;
+  }
+
+  .carousel__pagination-button::after {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .carousel__pagination-button:hover::after,
+  .carousel__pagination-button--active::after {
+    background-color: rgb(241, 196, 0) !important;
+  }
+}
 </style>

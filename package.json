@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.7",
-    "quasar": "^2.12.7"
+    "quasar": "^2.12.7",
+    "vue3-carousel": "^0.3.1"
   }
 }
