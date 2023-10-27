@@ -7,10 +7,10 @@ export default [
         label: 'Todos os Cursos',
         link: '/cursos'
     },
-    {
-        label: 'Materiais',
-        link: '/materiais'
-    },
+    // {
+    //     label: 'Materiais',
+    //     link: '/materiais'
+    // },
     {
         label: 'Planos',
         link: '/planos'

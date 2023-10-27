@@ -1,12 +1,9 @@
 <template>
-  <NuxtLink
-    to="/materiais/nome-do-ebook"
-    class="tw-bg-white/[.03] tw-rounded-md"
-  >
+  <NuxtLink to="/cursos/curso" class="tw-bg-white/[.03] tw-rounded-md">
     <div class="material-card">
       <div class="tw-card">
         <div class="thumbnail">
-          <img src="@/assets/img/ebook-thumbnail.jpg" />
+          <img src="@/assets/img/ebook-thumbnail.jpg" class="tw-w-full" />
         </div>
         <div class="ebook-content tw-box-border tw-p-4">
           <h2 class="tw-text-base tw-mb-3 tw-text-genesis tw-font-bold">
@@ -23,7 +20,7 @@
               name="ant-design:read-outlined"
             />
             <span class="tw-text-black tw-font-semibold tw-ml-2"
-              >Começar a Ler</span
+              >Iniciar o Curso</span
             >
           </q-btn>
         </div>
