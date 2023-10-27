@@ -4,4 +4,10 @@
 
 body {
     font-family: 'Poppins', 'Lato', 'Roboto', 'Helvetica', 'Verdana', 'Arial', sans-serif;
+
+}
+
+p {
+    font-size: 1rem;
+    color: #8B8B8B;
 }
