@@ -1,0 +1,14 @@
+<template>
+  <section class="page-">
+    <AppContainer class="tw-flex-col tw-gap-10">
+      <AppPageTitle title="Nome da Página" />
+    </AppContainer>
+  </section>
+</template>
+
+<script lang="ts" setup>
+</script>
+
+<style lang="scss" scoped>
+</style>
+
