@@ -138,7 +138,7 @@
 
               <p class="tw-font-medium tw-text-white">
                 Não iremos cobrar os primeiros 30 dias. A próxima cobrança será
-                dia 27/11/2023 no valor de R$36,90
+                dia 27/11/2023 no valor de R$36,90.
               </p>
 
               <q-btn
