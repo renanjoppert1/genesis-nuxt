@@ -3,13 +3,13 @@ export default [
         label: "Dashboard",
         iconType: "quasar",
         icon: "dashboard",
-        link: "/dashboard",
+        link: "/admin/dashboard",
     },
     {
         label: "Usuários",
         iconType: "quasar",
         icon: "person",
-        link: "/users",
+        link: "/admin/users",
     },
     {
         type: "divider",

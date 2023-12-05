@@ -4,8 +4,9 @@
             <q-item
                 v-if="item.type === undefined"
                 clickable
+                @click="router.push(item.link)"
                 :active="isActive(item.link)"
-                active-class="tw-bg-brand-primary tw-rounded tw-text-white"
+                active-class="tw-bg-brand-primary tw-rounded tw-text-black"
             >
                 <q-item-section avatar>
                     <q-icon
@@ -46,6 +47,8 @@ import { useAuthStore } from "@/stores/auth";
 const authStore = useAuthStore();
 
 const route = useRoute();
+
+const router = useRouter();
 
 function isActive(path: string | undefined) {
     if (route.fullPath === path) {
