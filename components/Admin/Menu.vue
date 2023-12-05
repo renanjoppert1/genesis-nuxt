@@ -1,19 +1,31 @@
 <template>
     <q-list padding>
-        <q-item
-            clickable
-            v-for="(item, index) in Menu"
-            :key="`menu-item-${index}`"
-            :active="isActive(item.link)"
-            active-class="tw-bg-brand-primary tw-rounded tw-text-white"
-        >
-            <q-item-section avatar>
-                <q-icon v-if="item.iconType === 'quasar'" :name="item.icon" />
-                <AppIcon v-if="item.iconType === 'iconify'" :name="item.icon" />
-            </q-item-section>
+        <span v-for="(item, index) in Menu" :key="`menu-item-${index}`">
+            <q-item
+                v-if="item.type === undefined"
+                clickable
+                :active="isActive(item.link)"
+                active-class="tw-bg-brand-primary tw-rounded tw-text-white"
+            >
+                <q-item-section avatar>
+                    <q-icon
+                        v-if="item.iconType === 'quasar'"
+                        :name="item.icon"
+                    />
+                    <AppIcon
+                        v-if="item.iconType === 'iconify'"
+                        :name="item.icon"
+                    />
+                </q-item-section>
 
-            <q-item-section>{{ item.label }}</q-item-section>
-        </q-item>
+                <q-item-section>{{ item.label }}</q-item-section>
+            </q-item>
+
+            <span
+                v-if="item.type !== undefined && item.type === 'divider'"
+                class="tw-w-full tw-h-[1px] tw-bg-white/10 tw-block tw-my-4"
+            ></span>
+        </span>
 
         <q-item clickable @click="logout">
             <q-item-section avatar>
@@ -35,7 +47,7 @@ const authStore = useAuthStore();
 
 const route = useRoute();
 
-function isActive(path: string) {
+function isActive(path: string | undefined) {
     if (route.fullPath === path) {
         return true;
     }
