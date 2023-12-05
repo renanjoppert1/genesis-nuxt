@@ -7,14 +7,14 @@ export const useAuthStore = defineStore("auth", {
     state: () => ({ user: undefined, token: undefined }),
     actions: {
         // TODO add auth csrf
-        async login() {
+        async login(email, password) {
             const { data, pending, error, refresh, status } = await useFetch(
                 `${config.public.API_BASE_URL}/admin/auth/login`,
                 {
                     method: "post",
                     body: {
-                        email: "renanljp@gmail.com",
-                        password: "123456",
+                        email,
+                        password,
                     },
                 },
             );
