@@ -49,8 +49,6 @@ definePageMeta({
   layout: "auth-admin",
 });
 
-const router = useRouter();
-
 const email = ref("");
 const password = ref("");
 const isPwd = ref(true);
