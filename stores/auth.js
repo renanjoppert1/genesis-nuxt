@@ -16,7 +16,7 @@ export const useAuthStore = defineStore("auth", {
                         email: "renanljp@gmail.com",
                         password: "123456",
                     },
-                }
+                },
             );
 
             console.log(data.value, status.value);
@@ -49,7 +49,14 @@ export const useAuthStore = defineStore("auth", {
             const router = useRouter();
             router.push("/admin/dashboard");
         },
-        logout() {},
+        resetState() {
+            this.user = undefined;
+            this.token = undefined;
+        },
+        logout() {
+            const router = useRouter();
+            router.push("/admin");
+        },
         me() {},
     },
 });
