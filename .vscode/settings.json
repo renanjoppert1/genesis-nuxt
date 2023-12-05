@@ -1,5 +1,12 @@
 {
   "editor.wordBreak": "normal",
   "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 60
+  "editor.wordWrapColumn": 60,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+    "activityBar.background": "#0B3239",
+    "titleBar.activeBackground": "#0F4650",
+    "titleBar.activeForeground": "#F5FCFD"
+  }
 }

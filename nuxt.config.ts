@@ -6,7 +6,8 @@ export default defineNuxtConfig({
 
   modules: [
     'nuxt-quasar-ui',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@pinia/nuxt'
     // '@nuxtjs/tailwindcss'
   ],
 
@@ -67,6 +68,13 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    }
+  },
+
+  runtimeConfig: {
+    public: {
+      API_BASE_URL: process.env.API_URL,
+      API_URI: process.env.API_URI
     }
   }
 })

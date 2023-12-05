@@ -1,5 +1,5 @@
 <template>
-  <div class="layout__default">
+  <div id="defaultLayout" class="layout__default">
     <div class="background-overlay tw-min-h-screen tw-bg-black/40">
       <AppHeader />
       <div class="spacer tw-w-full tw-h-10"></div>
