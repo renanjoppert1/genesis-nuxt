@@ -32,9 +32,9 @@
             </li>
             <li>
               <NuxtLink
-                to="/termos-e-politica-de-compra"
+                to="/politica-de-privacidade"
                 class="tw-text-gray-400 tw-hover:text-white"
-                >Termos e Política de Compra</NuxtLink
+                >Política de Privacidade</NuxtLink
               >
             </li>
             <li>
