@@ -12,27 +12,35 @@
           </h2>
           <nav class="tw-list-none tw-mb-10">
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink to="/" class="tw-text-gray-400 tw-hover:text-white"
                 >Página Inicial</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/sobre-nos"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Sobre Nós</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/planos"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Planos</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/termos-e-politica-de-compra"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Termos e Política de Compra</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/termos-de-uso"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Termos de Uso</NuxtLink
               >
             </li>
@@ -46,22 +54,28 @@
           </h2>
           <nav class="tw-list-none tw-mb-10">
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink to="/login" class="tw-text-gray-400 tw-hover:text-white"
                 >Login</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/periodo-de-avaliacao"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Cadastre-se</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/esqueci-minha-senha"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Esqueceu Sua Senha</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/minha-assinatura"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Minha Assinatura</NuxtLink
               >
             </li>
@@ -75,12 +89,16 @@
           </h2>
           <nav class="tw-list-none tw-mb-10">
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/categorias"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Categorias</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink class="tw-text-gray-400 tw-hover:text-white"
+              <NuxtLink
+                to="/cursos"
+                class="tw-text-gray-400 tw-hover:text-white"
                 >Todos os Cursos</NuxtLink
               >
             </li>
