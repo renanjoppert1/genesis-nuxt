@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper tw-px-5 tw-pt-5">
-    <q-btn flat color="primary">
+    <q-btn flat color="primary" @click="router.push('/cursos/curso')">
       <span class="tw-flex tw-items-center tw-gap-4 tw-w-full">
         <AppIcon name="lets-icons:back" /> Voltar Para o Site
       </span>
@@ -116,6 +116,7 @@
 </template>
 
 <script lang="ts" setup>
+const router = useRouter();
 </script>
 
 <style>
