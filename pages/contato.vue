@@ -1,5 +1,5 @@
 <template>
-  <section class="page-contato">
+  <section class="page__contato">
     <AppContainer class="tw-flex-col tw-gap-10">
       <AppPageTitle title="Contato" />
 

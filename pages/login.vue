@@ -48,6 +48,7 @@
               <q-btn
                 color="primary"
                 class="tw-block tw-bg-gray-800 tw-px-8 tw-py-3 tw-text-center tw-text-sm tw-font-semibold !tw-text-black tw-outline-none tw-ring-gray-300 tw-transition tw-duration-100 tw-hover:tw-bg-gray-700 tw-focus-visible:tw-ring tw-active:tw-bg-gray-600 md:tw-text-base"
+                to="/area-do-aluno"
               >
                 Entrar
               </q-btn>
