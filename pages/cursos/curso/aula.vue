@@ -167,39 +167,6 @@
                     </button>
                   </div>
                 </li>
-                <li
-                  class="tw-flex tw-items-center tw-gap-x-2 tw-p-3 tw-text-sm tw-bg-white tw-border tw-text-gray-800 first:tw-rounded-t-lg first:tw-mt-0 last:tw-rounded-b-lg dark:bg-slate-900 dark:tw-border-gray-700 dark:tw-text-gray-200"
-                >
-                  <div class="tw-w-full tw-flex tw-justify-between tw-truncate">
-                    <span class="me-3 tw-flex-1 tw-w-0 tw-truncate">
-                      coverletter_web_ui_developer.pdf
-                    </span>
-                    <button
-                      type="button"
-                      class="tw-flex tw-items-center tw-gap-x-2 tw-text-gray-500 hover:tw-text-blue-500 tw-whitespace-nowrap dark:focus:tw-outline-none dark:focus:tw-ring-1 dark:focus:tw-ring-gray-600"
-                    >
-                      <svg
-                        class="tw-flex-shrink-0 tw-w-4 tw-h-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path
-                          d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
-                        ></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" x2="12" y1="15" y2="3"></line>
-                      </svg>
-                      Download
-                    </button>
-                  </div>
-                </li>
               </ul>
               <!-- End List Group -->
             </div>
