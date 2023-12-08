@@ -1,11 +1,11 @@
 <template>
-  <div class="tw-w-full tw-flex tw-gap-5">
+  <div class="tw-w-full tw-flex tw-flex-col sm:tw-flex-row tw-gap-5">
     <q-btn
       v-for="btn in links"
       :key="btn.link"
       color="primary"
       :label="btn.label"
-      :outline="isCurrentPage(btn.link) == false"
+      :flat="isCurrentPage(btn.link) == false"
       class="tw-text-black tw-text-base"
       :class="{
         'tw-text-primary': isCurrentPage(btn.link) === false,
