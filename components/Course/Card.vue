@@ -50,7 +50,7 @@
           color="primary"
           text-color="black"
           class="tw-my-4 row tw-mb-[10vh] lg:tw-mb-auto"
-          to="/cursos/curso-teste"
+          to="/cursos/curso"
           size="1.2em"
         >
           Ir Para este Curso

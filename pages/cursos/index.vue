@@ -26,10 +26,10 @@
         <div
           class="ebook-list tw-flex tw-flex-wrap tw-gap-10 tw-mt-10 tw-justify-center md:tw-justify-start"
         >
-          <MaterialCard />
-          <MaterialCard />
-          <MaterialCard />
-          <MaterialCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
         </div>
       </div>
     </AppContainer>

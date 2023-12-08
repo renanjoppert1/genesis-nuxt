@@ -14,7 +14,12 @@
             <p>Teologia</p>
           </div>
 
-          <q-btn class="tw-w-full tw-mt-4 tw-flex" size="md" color="primary">
+          <q-btn
+            to="/materiais/material"
+            class="tw-w-full tw-mt-4 tw-flex"
+            size="md"
+            color="primary"
+          >
             <AppIcon
               class="tw-text-black tw-text-2xl"
               name="ant-design:read-outlined"
