@@ -37,6 +37,7 @@
           <q-btn
             color="primary"
             class="!tw-text-black tw-font-semibold tw-text-base"
+            @click="router.push('/periodo-de-avaliacao?plan=1')"
           >
             Inicie Agora Seus 30 Dias Grátis
           </q-btn>
@@ -90,6 +91,7 @@
 </template>
 
 <script lang="ts" setup>
+const router = useRouter();
 </script>
 
 <style>
