@@ -1,7 +1,9 @@
 <template>
   <section class="page_materiais">
     <AppContainer class="tw-flex-col tw-gap-10">
-      <AppPageTitle title="Todos os Cursos" />
+      <div class="tw-w-full">
+        <h1 class="tw-text-2xl tw-font-semibold">Materiais</h1>
+      </div>
 
       <div class="categories-list tw-w-full">
         <q-tabs
