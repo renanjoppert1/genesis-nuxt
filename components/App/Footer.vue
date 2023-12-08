@@ -74,7 +74,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/minha-assinatura"
+                to="/area-do-aluno/assinatura"
                 class="tw-text-gray-400 tw-hover:text-white"
                 >Minha Assinatura</NuxtLink
               >
