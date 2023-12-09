@@ -6,7 +6,7 @@ export const useAuthStore = defineStore("auth", {
         // TODO add auth csrf
         async login(email, password) {
             const { data, pending, error, refresh, status } = await useApi(
-                `/admin/login1`,
+                `/admin/login`,
                 {
                     method: "post",
                     body: {
@@ -43,5 +43,8 @@ export const useAuthStore = defineStore("auth", {
             router.push("/admin");
         },
         me() {},
+    },
+    persist: {
+        storage: persistedState.localStorage,
     },
 });
