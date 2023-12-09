@@ -1,45 +1,30 @@
 import { defineStore } from "pinia";
-const config = useRuntimeConfig();
-import { Notify } from "quasar";
-// import useUseToast from
 
 export const useAuthStore = defineStore("auth", {
     state: () => ({ user: undefined, token: undefined }),
     actions: {
         // TODO add auth csrf
         async login(email, password) {
-            const { data, pending, error, refresh, status } = await useFetch(
-                `${config.public.API_BASE_URL}/admin/auth/login`,
+            const { data, pending, error, refresh, status } = await useApi(
+                `/admin/login1`,
                 {
                     method: "post",
                     body: {
                         email,
                         password,
                     },
-                },
+                }
             );
 
             console.log(data.value, status.value);
 
             if (status.value === "error") {
-                console.error("Erro no login");
+                console.error("Erro no login", error);
 
-                Notify.create({
-                    message:
-                        "Credenciais inválidas. Verifique seus dados e tente novamente.",
-                    color: "red",
-                    position: "top-right",
-                    actions: [
-                        {
-                            icon: "close",
-                            color: "white",
-                            round: true,
-                            handler: () => {
-                                /* ... */
-                            },
-                        },
-                    ],
-                });
+                useToast(
+                    "Credenciais inválidas. Verifique seus dados e tente novamente.",
+                    "error"
+                );
                 return;
             }
 
